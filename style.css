@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,100&display=swap');
+/* Be Vietnam Pro */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Be Vietnam Pro';
+}
+
+header {
+    background: url(img/header.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 180px;
+}
+
+.barra-menu {
+    background-color: black;
+    height: 50px;
+}
+
+header .titulo-header {
+    color: white;
+    padding: 50px;
+}
+
+footer {
+    background-color: black;
+    background-size: cover;
+    background-position:center;
+    height: 100px;
+}
+
+footer p {
+    color: white;
+    padding: 20px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 {
+    font-size: 100px;
+    color: black;
+    text-align: right;
+}
+
+header .exclamacion {
+    color: violet;
+    font-size: 100px;
+}
+
+.contenedor{
+    max-width: auto;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.contenedor .contenedor-items{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 70px;
+    grid-row-gap: 30px;
+    /* width: 60%; */
+    width: 100%;
+    transition: .3s;
+}
+
+.contenedor .contenedor-items img {
+    width: 250px;
+    height: 250px;
+}
+
+.contenedor .contenedor-items .item{
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    transition: .3s;
+    position: relative;
+}
+
+.contenedor .contenedor-items .item .img-item{
+    width: 100%;
+}
+.contenedor .contenedor-items .item:hover{
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+.contenedor .contenedor-items .item .precio-item{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.contenedor .contenedor-items .item .boton-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+
+.panel {
+    position: fixed;
+    z-index: 998;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3 ease;
+    /* De arriba (X-Y)*/
+    transform: translate(0, -100%);
+    /* De abajo
+    transform: translate(0, 100%);
+    De derecha
+    transform: translate(100%, 0);
+    Dei izquierda
+    transform: translate(-100%, 0); */
+}
+
+.panel.is-active{
+    transform: translate(0, 0);
+    opacity: 1;
+    background-color: white;
+}
+
+/* características para colocar el botón en la esquina inferior derecha */
+.panel-btn{
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;  /* viewport height */
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white {
+    position: fixed;
+    z-index: 999;
+    bottom: 1vh;  /* viewport height */
+    right: 1vw;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: .5;
+}
+
+.menu {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.menu a{
+    padding: 2rem;
+    width: inherit;
+    display: block;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.menu a:hover {
+    opacity: 1;
+    font-weight: bold;
+    color: white;
+    background-color: black;    
+}

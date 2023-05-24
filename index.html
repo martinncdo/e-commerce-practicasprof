@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- menú hamburguesa -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Tienda</title>
+</head>
+<body data-dark>
+    <header>
+        <h1 class="titulo-header"><span class="exclamacion">!</span>Urban Posadas</h1>
+    </header>
+    <div class="barra-menu">
+        <span class="menu">Inicio</span>
+        <span class="menu">Novedades</span>
+        <span class="menu">Ubicación</span>
+    </div>
+    <button class="panel-btn hamburger hamburger--vortex" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#seccion1">Novedades</a>
+            <a href="#seccion2">Calzado</a>
+            <a href="#seccion3">Ropa</a>
+            <a href="#seccion4">Accesorios</a>
+        </nav>
+    </aside>
+
+    <section class="contenedor">
+        <!-- contenedor de los elementos -->
+        <div class="contenedor-items">
+        <div class="item">
+            <span class="titulo-item">Nike ACG Therma-FIT</span>
+            <img src="img/pilcha.jpg" alt="">
+            <span class="precio-item">$46.999</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Nike Solo Swoosh</span>
+            <img src="img/pilcha1.jpg" alt="">
+            <span class="precio-item">$32.499</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Nike Sportswear</span>
+            <img src="img/pilcha2.jpg" alt="">
+            <span class="precio-item">$31.499</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Nike Air</span>
+            <img src="img/pilcha3.jpg" alt="">
+            <span class="precio-item">$41.999</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        <div class="item">
+            <span class="titulo-item">Nike Solo Swoosh</span>
+            <img src="img/pilcha4.jpg" alt="">
+            <span class="precio-item">$37.999</span>
+            <button class="boton-item">Agregar al Carrito</button>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Posadas Plaza Shopping: Calle Bolívar N° 1979, 1° Piso, Local N° 42. 
+        De lunes a sábados de 09:00 hs a 21:00 hs (horario corrido).</p>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>
+
